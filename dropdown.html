@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     
+       nav ul{
+        cursor: pointer;
+        list-style: none;
+       }
+       nav ul li{
+        padding:10px ;
+       }
+       nav ul li:hover{
+        color: gray;
+       }
+       .dropdown{
+        width: 142px;
+        height: 168px;
+        box-shadow: 5px 5px 10px gray;
+        position: absolute;
+        top: 29px;
+        left: 40px;
+        display: none;
+       }
+       .dropdown ul li{
+        padding: 10px;
+        color: black;
+       }
+       nav ul li:hover .dropdown{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <nav class=".navigation">
+        <ul>
+            <li><i class="fa-solid fa-list"></i>
+            <div class="dropdown"><ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About Us</li>
+                <li>Services</li>
+            </ul>
+            </div>
+           </li>
+        </ul>
+    </nav>
+</body>
+</html>
